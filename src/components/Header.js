@@ -1,3 +1,5 @@
+import "./Header.css";
+
 function Header() {
   return (
     <header class="navbar navbar-expand-lg navbar-light bg-light">
