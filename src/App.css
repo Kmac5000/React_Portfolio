@@ -1,3 +1,16 @@
+.navbar-text {
+  font-size: 5rem;
+  font-family: "Splash", cursive;
+}
+
+#navName {
+  color: black;
+}
+
+.nav-item {
+  font-size: 2rem;
+}
+
 .App {
   text-align: center;
 }
@@ -5,6 +18,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  border-radius: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
