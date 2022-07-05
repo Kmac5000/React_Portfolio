@@ -1,3 +1,8 @@
+import * as React from "react";
+import { Link } from "react-router-dom";
+import About from "./About";
+import Projects from "./Projects";
+
 import "./Header.css";
 
 function Header() {
@@ -27,19 +32,19 @@ function Header() {
         <div className="justify-content-end" id="navbarText">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#about-area">
+              <Link to="/about" className="nav-link" aria-current="page">
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#projects-area">
+              <Link to="/project" className="nav-link">
                 Projects
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact-area">
+              <Link to="/contact" className="nav-link">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

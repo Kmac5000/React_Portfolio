@@ -17,11 +17,11 @@ const ContactMe = () => {
     e.preventDefault();
     setFormdata({ loading: true });
 
-    const templateParams = {
-      from_name: formData.email,
-      user_name: formData.name,
-      message: formData.message,
-    };
+    // const templateParams = {
+    //   from_name: formData.email,
+    //   user_name: formData.name,
+    //   message: formData.message,
+    // };
   };
 
   const handleChange = (e) => {

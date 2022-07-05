@@ -4,29 +4,24 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import ContactMe from "./components/Contact";
 import Projects from "./components/Projects";
+import * as React from "react";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      {/* <main className="App-header">
-        <img src="logo512.png" className="App-logo" alt="face" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </main> */}
-      <About />
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="about" element={<About />} />
+        <Route path="projects" element={<Projects />} />
+        {/* <Route path="contact" element={<ContactMe />} /> */}
+      </Routes>
+
+      {/* <About />
       <Projects />
-      <ContactMe />
+      <ContactMe /> */}
       <Footer />
     </div>
   );
