@@ -28,7 +28,7 @@ function Header() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        {/* <div class="collapse navbar-collapse" id="navbarText"> */}
+        {/* <div className="collapse navbar-collapse" id="navbarText"> */}
         <div className="justify-content-end" id="navbarText">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
@@ -48,6 +48,7 @@ function Header() {
             </li>
           </ul>
         </div>
+        {/* </div> */}
       </nav>
     </header>
   );
