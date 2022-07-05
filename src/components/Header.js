@@ -14,9 +14,6 @@ function Header() {
             Keith MacNeil
           </a>
         </h1>
-        {/* <a class="navbar-brand" href="#">
-          Navbar w/ text
-        </a> */}
         <button
           className="navbar-toggler"
           type="button"
