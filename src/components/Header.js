@@ -41,6 +41,11 @@ function Header() {
                   Contact
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link to="/resume" className="nav-link">
+                  Resume
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
