@@ -16,12 +16,6 @@ const ContactMe = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormdata({ loading: true });
-
-    // const templateParams = {
-    //   from_name: formData.email,
-    //   user_name: formData.name,
-    //   message: formData.message,
-    // };
   };
 
   const handleChange = (e) => {
@@ -71,7 +65,7 @@ const ContactMe = () => {
                     className="form-control"
                     id="name"
                     name="name"
-                    placeholder="Name"
+                    placeholder="What is Your Name?"
                     value={formData.name || ""}
                     type="text"
                     required

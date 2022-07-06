@@ -31,10 +31,6 @@ p {
   color: aliceblue;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes face-twist {
   /* from {
     transform: rotate3d(0);
