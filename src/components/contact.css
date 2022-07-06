@@ -25,19 +25,6 @@ button.btn.ac_btn:hover {
   color: var(--secondary-color);
 }
 
-/* .loading-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-  z-index: 999999999;
-  background: var(--text-color);
-  transform: translateX(100%);
-  animation: shift-rightwards 1s ease-in-out infinite;
-  animation-delay: 0.3s;
-} */
-
 @keyframes shift-rightwards {
   0% {
     transform: translateX(-100%);

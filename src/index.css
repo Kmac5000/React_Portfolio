@@ -6,7 +6,7 @@
   --behind-secondary-color: var(--text-color-2);
   --text-color: aliceblue;
   --text-color-2: #fff;
-  --overlay-color: rgb(12 12 12 / 63%);
+  --overlay-color: rgba(18, 24, 148, 0.63);
 }
 
 body {

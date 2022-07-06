@@ -11,6 +11,7 @@ p {
   height: 40vmin;
   pointer-events: none;
   border-radius: 100%;
+  box-shadow: 0rem 0rem 2rem 1rem black, 0 0 5rem blue, 0 0 10rem darkblue;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -20,7 +21,7 @@ p {
 }
 
 .App-header {
-  background-color: #282c34;
+  background: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
