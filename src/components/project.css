@@ -70,10 +70,6 @@
   font-size: 20px;
 }
 
-/* .po_item:hover {
-  box-shadow: 0 0px 0px 0 rgba(201, 31, 31, 0.25);
-} */
-
 .projectItem:hover .content {
   height: calc(100% - 30px);
   width: calc(100% - 30px);
