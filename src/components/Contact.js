@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Alert } from "react-bootstrap";
+import { Container, Row, Col, Alert, Button } from "react-bootstrap";
 import "./contact.css";
 
 const ContactMe = () => {
@@ -58,7 +58,7 @@ const ContactMe = () => {
             <p>{}</p>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
-            <form onSubmit={handleSubmit} className="contact__form w-100">
+            <form onSubmit={handleSubmit} className="contact-form w-100">
               <Row>
                 <Col lg="6" className="form-group">
                   <input
@@ -90,7 +90,7 @@ const ContactMe = () => {
                 id="message"
                 name="message"
                 placeholder="Message"
-                rows="5"
+                // rows="4"
                 value={formData.message}
                 onChange={handleChange}
                 required
@@ -98,9 +98,9 @@ const ContactMe = () => {
               <br />
               <Row>
                 <Col lg="12" className="form-group">
-                  <button className="btn ac_btn" type="submit">
-                    {formData.loading ? "Sending..." : "Send"}
-                  </button>
+                  <Button className="btn-danger" id="subButton" type="submit">
+                    {formData.loading ? "Sending" : "Send"}
+                  </Button>
                 </Col>
               </Row>
             </form>
