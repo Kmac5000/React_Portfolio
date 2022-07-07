@@ -30,7 +30,7 @@ const ContactMe = () => {
         <Row className="mb-5 mt-3">
           <Col lg="8">
             <h1 className="display-4 mb-4 contact-about">Contact Me</h1>
-            <hr className="my-4 ml-0 text-left" />
+            <hr />
           </Col>
         </Row>
         <Row>
@@ -42,7 +42,7 @@ const ContactMe = () => {
             ></Alert>
           </Col>
           <Col lg="5" className="mb-5">
-            <h3 className="py-4 contact-about">Get in touch</h3>
+            <h2 className="py-4 contact-about">Get in touch</h2>
             <div className="contact-about">
               Email :
               <a href="mailto:riverbatrock@gmail.com"> RiverBatRock@gmail</a>
@@ -71,7 +71,7 @@ const ContactMe = () => {
                     className="form-control rounded-0"
                     id="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder="What is Your Email?"
                     type="email"
                     value={formData.email || ""}
                     required
@@ -80,11 +80,11 @@ const ContactMe = () => {
                 </Col>
               </Row>
               <textarea
-                className="form-control rounded-0"
+                className="form-control"
                 id="message"
                 name="message"
-                placeholder="Message"
-                // rows="4"
+                placeholder="Send Me a Message."
+                rows="7"
                 value={formData.message}
                 required
                 onChange={handleChange}
@@ -92,7 +92,7 @@ const ContactMe = () => {
               <br />
               <Row>
                 <Col lg="12" className="form-group">
-                  <Button className="btn-danger" id="subButton" type="submit">
+                  <Button id="subButton" type="submit">
                     {formData.loading ? "Sending" : "Send"}
                   </Button>
                 </Col>

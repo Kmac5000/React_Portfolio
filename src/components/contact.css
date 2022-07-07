@@ -3,6 +3,7 @@
 }
 
 .contact-about {
+  font-size: 2.3rem;
   color: aliceblue;
   font-family: "Splash", cursive;
 }
@@ -19,9 +20,16 @@
 
 .contact-form input.form-control {
   margin-bottom: 2rem;
-  height: calc(2.5rem + 0.75rem + 2px);
   box-shadow: 0rem 0rem 2rem 1rem black, 0 0 5rem blue, 0 0 10rem darkblue;
   border: 1px solid var(--secondary-color);
+  height: 1.5rem;
+  text-align: center;
+}
+
+textarea {
+  box-shadow: 0rem 0rem 2rem 1rem black, 0 0 5rem blue, 0 0 10rem darkblue;
+  border: 1px solid var(--secondary-color);
+  text-align: center;
 }
 
 #subButton {
