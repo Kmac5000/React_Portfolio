@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Alert, Button } from "react-bootstrap";
+import { Container, Row, Col, Alert, Button, Form } from "react-bootstrap";
 import "./contact.css";
 
 const ContactMe = () => {
@@ -30,35 +30,29 @@ const ContactMe = () => {
         <Row className="mb-5 mt-3">
           <Col lg="8">
             <h1 className="display-4 mb-4 contact-about">Contact Me</h1>
-            <hr className="t_border my-4 ml-0 text-left" />
+            <hr className="my-4 ml-0 text-left" />
           </Col>
         </Row>
-        <Row className="sec_sp">
+        <Row>
           <Col lg="12">
             <Alert
-              //show={formData.show}
+              className={formData.show}
               variant={formData.variant}
-              className={`rounded-0 co_alert ${
-                formData.show ? "d-block" : "d-none"
-              }`}
               onClose={() => setFormdata({ show: false })}
-              dismissible
-            >
-              <p className="my-0">{formData.alertmessage}</p>
-            </Alert>
+            ></Alert>
           </Col>
           <Col lg="5" className="mb-5">
-            <h3 className="color_sec py-4 contact-about">Get in touch</h3>
-            <address className="contact-about">
+            <h3 className="py-4 contact-about">Get in touch</h3>
+            <div className="contact-about">
               Email :
               <a href="mailto:riverbatrock@gmail.com"> RiverBatRock@gmail</a>
               <br />
               <br />
-            </address>
+            </div>
             <p>{}</p>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
-            <form onSubmit={handleSubmit} className="contact-form w-100">
+            <Form onSubmit={handleSubmit} className="contact-form w-100">
               <Row>
                 <Col lg="6" className="form-group">
                   <input
@@ -92,8 +86,8 @@ const ContactMe = () => {
                 placeholder="Message"
                 // rows="4"
                 value={formData.message}
-                onChange={handleChange}
                 required
+                onChange={handleChange}
               ></textarea>
               <br />
               <Row>
@@ -103,7 +97,7 @@ const ContactMe = () => {
                   </Button>
                 </Col>
               </Row>
-            </form>
+            </Form>
           </Col>
         </Row>
       </Container>
