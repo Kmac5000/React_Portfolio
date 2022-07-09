@@ -3,12 +3,24 @@ import "./resume.css";
 function Resume() {
   return (
     <section className="App-header" id="about-area">
-      <h1>Nothing Here Yet</h1>
-      <h2>Nothing Here Yet</h2>
-      <h3>Nothing Here Yet</h3>
-      <h4>Nothing Here Yet</h4>
-      <h5>Nothing Here Yet</h5>
-      <h6>Nothing Here Yet</h6>
+      <h1>Download Resume Below</h1>
+      <h2>Download Resume Below</h2>
+      <h3>Download Resume Below</h3>
+
+      <button className="resume-button my-4 rounded-pill bg-danger ">
+        <a
+          className="text-decoration-none text-reset m-5"
+          download="Resume_Keith2.pdf"
+          target="_blank"
+          href="/resume/Resume_Keith2.pdf"
+        >
+          ✭✭ Download My Resume ✭✭
+        </a>
+      </button>
+
+      <h4>Download Resume Above</h4>
+      <h5>Download Resume Above</h5>
+      <h6>Download Resume Above</h6>
     </section>
   );
 }

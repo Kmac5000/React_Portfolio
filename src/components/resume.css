@@ -2,3 +2,7 @@ section {
   font-size: 200rem;
   font-family: "Gloria Hallelujah", cursive;
 }
+
+.resume-button {
+  box-shadow: 0rem 0rem 2rem 1rem black, 0 0 5rem blue, 0 0 10rem red;
+}

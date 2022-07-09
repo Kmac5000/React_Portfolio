@@ -2,6 +2,18 @@ import React, { useState } from "react";
 import { Container, Row, Col, Alert, Button, Form } from "react-bootstrap";
 import "./contact.css";
 
+// let transporter = nodemailer.createTransport({
+//   service: "gmail",
+//   auth: {
+//     type: "OAuth2",
+//     user: process.env.MAIL_USERNAME,
+//     pass: process.env.MAIL_PASSWORD,
+//     clientId: process.env.OAUTH_CLIENTID,
+//     clientSecret: process.env.OAUTH_CLIENT_SECRET,
+//     refreshToken: process.env.OAUTH_REFRESH_TOKEN,
+//   },
+// });
+
 const ContactMe = () => {
   const [formData, setFormdata] = useState({
     email: "",
@@ -92,7 +104,7 @@ const ContactMe = () => {
               <br />
               <Row>
                 <Col lg="12" className="form-group">
-                  <Button id="subButton" type="submit">
+                  <Button className="mb-5" id="subButton" type="submit">
                     {formData.loading ? "Sending" : "Send"}
                   </Button>
                 </Col>
