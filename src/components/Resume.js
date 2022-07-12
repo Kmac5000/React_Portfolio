@@ -10,7 +10,7 @@ function Resume() {
       <button className="resume-button my-4 rounded-pill bg-danger ">
         <a
           className="text-decoration-none text-reset m-2"
-          download="Resume_Keith2.pdf"
+          download="Keith_MacNeil_Resume.pdf"
           target="_blank"
           href="/resume/Resume_Keith2.pdf"
         >
